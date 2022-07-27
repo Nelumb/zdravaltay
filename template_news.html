@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head itemscope itemtype="http://schema.org/WPHeader">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta itemprop="description" name="description" content="описание_страницы" />
+		<meta itemprop="keywords" name="keywords" content="ключевые_слова_для_страницы" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/fontello.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+
+		<title itemprop="headline">ЗдравАлтай</title>
+	</head>
+	<body>
+	<div class="site" id="siteSize">
+			<header class="header">
+				<nav class="header__nav"  id="myHeader" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+					<div class="container">
+						<div class="header__wrap">
+							<ul  class="header__menu ">								
+								<li class="header__menu_item ">
+									<a class="header__menu_link  " href="template_about.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">О компании</span>
+									</a>
+								</li>
+								<li class="header__menu_item">
+									<div class="header__menu_link" href="#" itemprop="url">
+										<div class="dropdown">
+											<a  href="template_products.html" class="header__menu_text dropbtn" itemprop="name">Продукция <img id="galka" class="galka dropbtn" src="img/galka.svg" alt=""></a>
+											<div id="myDropdown" class="dropdown-content">
+											<a href="template_news.html"><img src="img/Ellipse.svg" alt="">	Сиропы на основе растительного сырья</a> 
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Чай на основе алтайских трав и ягод</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Сухие напитки </a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Бальзамы безалкогольные</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Пищевые экстракты</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Медово-растительные бальзамы</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Каши быстрого приготовления</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Напитки растворимые</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Кремы косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Гели косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Гель эротический </a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Бальзамы косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Лосьоны косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Маски косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Мед</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="header__menu_item">
+									<a class="header__menu_link" href="template_certificate.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">Сертификаты</span>
+									</a>
+								</li>
+								<li class="header__menu_item">
+									<a class="header__menu_link" href="template_contact.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">Контакты</span>
+									</a>
+								</li>
+								<li class="header__menu_item">
+									<a class="header__menu_link" href="template_delivery.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">Доставка и оплата</span>
+									</a>
+								</li>
+								<li class="header__menu_item">
+									<a class="header__menu_link" href="template_news.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">Новости</span>
+									</a>
+								</li>
+							</ul>
+							<div class="header__burger">
+								<div class="header__burger_container" onclick="xFunction(this)">
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+									<div class="bar3"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="header__main">
+					<div class="container">
+						<div class="header__inner">
+							<div class="header__logo">
+								<a class="header__logo_link" href="/">
+									<img class="header__logo_img" src="img/logo.svg" alt="" />
+								</a>
+							</div>
+							<div class="header__search">
+								<form class="search__form" action="">
+									<input class="search__input" type="text" placeholder="Поиск" />
+									<button class="search__submit">
+										<i class="icon icon-search"></i>
+									</button>
+								</form>
+							</div>
+							
+							<div class="header__contacts">
+								<div class="header__contacts_phone">
+									<i class="header__contacts_icon icon icon-phone"></i>
+									<a class="header__contacts_link" href="tel:88005005261">8 800 500 52 61</a>
+								</div>
+								<span class="header__contacts_text">Звонок по России бесплатый</span>
+							</div>
+							<ul class="header__personal">
+								<li class="header__personal_item">
+									<a class="header__personal_item-link" href="#">
+										<i class="header__personal_item-icon icon icon-heart"></i>
+										<span class="header__personal_item-counter">10</span>
+									</a>
+								</li>
+								<li class="header__personal_item">
+									<a class="header__personal_item-link" href="#">
+										<i class="header__personal_item-icon icon icon-cart"></i>
+										<span class="header__personal_item-counter"></span>
+									</a>
+								</li>
+								<li class="header__personal_item">
+									<a class="header__personal_item-link" href="#">
+										<i class="header__personal_item-icon icon icon-user"></i>
+									</a>
+								</li>
+							</ul>
+							<div onclick="openNav()" class="header__burger">
+								<div class="header__burger_container" >
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+									<div class="bar3"></div>
+								</div>
+							</div>
+						</div>
+						<div class="header__wrap">
+							<ul  class="header__menu  ">
+								<div id="myNav" class="overlay">
+									<div class="overlay__wrap">
+										<div class="header__searchmini">
+											<form class="search__formmini" action="">
+												<input class="search__inputmini" type="text" placeholder="Поиск" />
+												<button class="search__submitmini">
+													<i class="icon icon-search"></i>
+												</button>
+											</form>
+										</div>
+										<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+									</div>
+									<li class="header__menu_item ">
+										<a class="header__menu_link  " href="template_about.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">О компании</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<div class="header__menu_link" href="#" itemprop="url">
+											<div class="dropdown">
+												<span onclick="myFunction()" class="header__menu_text dropbtn" itemprop="name">Продукция <img id="galka" class="galka dropbtn" src="img/galka_grey.svg" alt=""></span>
+												<div id="myminiDropdown" class="dropdown-content">
+												<a  class="dropdown__content_link" href="template_news.html"><img src="img/Ellipse.svg" alt="">	Сиропы на основе растительного сырья</a> 
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Чай на основе алтайских трав и ягод</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Сухие напитки </a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Бальзамы безалкогольные</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Пищевые экстракты</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Медово-растительные бальзамы</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Каши быстрого приготовления</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Напитки растворимые</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Кремы косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Гели косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Гель эротический </a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Бальзамы косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Лосьоны косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Маски косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Мед</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_certificate.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Сертификаты</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_contact.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Контакты</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_delivery.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Доставка и оплата</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_news.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Новости</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_news.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Избранное</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_news.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Корзина</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_news.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Личный кабинет</span>
+										</a>
+									</li>
+								</div>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- <div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a class="breadcrumbs-link" href="/" title="Главная" itemprop="item">
+								<span itemprop="name">Главная</span>
+								<meta itemprop="position" content="1" />
+							</a>
+						</li>
+						<li class="breadcrumbs-item">
+							&nbsp;/&nbsp;
+						</li>
+						<li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<span class="breadcrumbs-span" itemprop="item">
+								<span itemprop="name">Каталог</span>
+								<meta itemprop="position" content="2" />
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div> -->
+			<main class="main">
+				<div class="pages">
+					<div class="container">
+						<div class="page__title">
+							Новинки
+						</div>
+						<div class="product__slide_wraper">
+							<div class="product__slide swiper-slide">
+								<div class="product__card">
+									<a class="product__card_link" href="#">
+										<div class="product__card_imgbox">
+											<img class="product__card_img" src="img/product-1.png" alt="" />
+										</div>
+										<div class="product__card_wish">
+											<i class="product__card_wish-icon icon icon-heart"></i>
+										</div>
+										<div class="product__card_labels">
+											<div class="product__card_label hitproduct">
+												Хит продаж
+											</div>
+											<div class="product__card_label newproduct ">
+												Новинка
+											</div>
+											<div class="product__card_label  promotionproduct">
+												Акция
+											</div>
+										</div>
+									</a>
+									<div class="product__card_infobox">
+										<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+										<div class="product__card_testimony">Легкое дыхание</div>
+										<div class="product__card_price">1500pуб.</div>
+									</div>
+									<div class="product__card_addcart">
+										<button class="product__card_addcart-btn">В корзину</button>
+										<div class="product__card_quantity">
+											<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+											<input
+												class="product__card_quantity-input"
+												type="number"
+												id=""
+												step="1"
+												min="0"
+												max=""
+												name=""
+												value="1"
+												title="Кол-во"
+												size="4"
+												placeholder=""
+												autocomplete="off"
+											/>
+											<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__slide swiper-slide">
+								<div class="product__card">
+									<a class="product__card_link" href="#">
+										<div class="product__card_imgbox">
+											<img class="product__card_img" src="img/product-1.png" alt="" />
+										</div>
+										<div class="product__card_wish">
+											<i class="product__card_wish-icon icon icon-heart"></i>
+										</div>
+										<div class="product__card_labels">
+											<div class="product__card_label hitproduct">
+												Хит продаж
+											</div>
+											<div class="product__card_label newproduct ">
+												Новинка
+											</div>
+											<div class="product__card_label  promotionproduct">
+												Акция
+											</div>
+										</div>
+									</a>
+									<div class="product__card_infobox">
+										<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+										<div class="product__card_testimony">Легкое дыхание</div>
+										<div class="product__card_price">1500pуб.</div>
+									</div>
+									<div class="product__card_addcart">
+										<button class="product__card_addcart-btn">В корзину</button>
+										<div class="product__card_quantity">
+											<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+											<input
+												class="product__card_quantity-input"
+												type="number"
+												id=""
+												step="1"
+												min="0"
+												max=""
+												name=""
+												value="1"
+												title="Кол-во"
+												size="4"
+												placeholder=""
+												autocomplete="off"
+											/>
+											<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__slide swiper-slide">
+								<div class="product__card">
+									<a class="product__card_link" href="#">
+										<div class="product__card_imgbox">
+											<img class="product__card_img" src="img/product-1.png" alt="" />
+										</div>
+										<div class="product__card_wish">
+											<i class="product__card_wish-icon icon icon-heart"></i>
+										</div>
+										<div class="product__card_labels">
+											<div class="product__card_label hitproduct">
+												Хит продаж
+											</div>
+											<div class="product__card_label newproduct ">
+												Новинка
+											</div>
+											<div class="product__card_label  promotionproduct">
+												Акция
+											</div>
+										</div>
+									</a>
+									<div class="product__card_infobox">
+										<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+										<div class="product__card_testimony">Легкое дыхание</div>
+										<div class="product__card_price">1500pуб.</div>
+									</div>
+									<div class="product__card_addcart">
+										<button class="product__card_addcart-btn">В корзину</button>
+										<div class="product__card_quantity">
+											<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+											<input
+												class="product__card_quantity-input"
+												type="number"
+												id=""
+												step="1"
+												min="0"
+												max=""
+												name=""
+												value="1"
+												title="Кол-во"
+												size="4"
+												placeholder=""
+												autocomplete="off"
+											/>
+											<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__slide swiper-slide">
+								<div class="product__card">
+									<a class="product__card_link" href="#">
+										<div class="product__card_imgbox">
+											<img class="product__card_img" src="img/product-1.png" alt="" />
+										</div>
+										<div class="product__card_wish">
+											<i class="product__card_wish-icon icon icon-heart"></i>
+										</div>
+										<div class="product__card_labels">
+											<div class="product__card_label hitproduct">
+												Хит продаж
+											</div>
+											<div class="product__card_label newproduct ">
+												Новинка
+											</div>
+											<div class="product__card_label  promotionproduct">
+												Акция
+											</div>
+										</div>
+									</a>
+									<div class="product__card_infobox">
+										<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+										<div class="product__card_testimony">Легкое дыхание</div>
+										<div class="product__card_price">1500pуб.</div>
+									</div>
+									<div class="product__card_addcart">
+										<button class="product__card_addcart-btn">В корзину</button>
+										<div class="product__card_quantity">
+											<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+											<input
+												class="product__card_quantity-input"
+												type="number"
+												id=""
+												step="1"
+												min="0"
+												max=""
+												name=""
+												value="1"
+												title="Кол-во"
+												size="4"
+												placeholder=""
+												autocomplete="off"
+											/>
+											<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__slide swiper-slide">
+								<div class="product__card">
+									<a class="product__card_link" href="#">
+										<div class="product__card_imgbox">
+											<img class="product__card_img" src="img/product-1.png" alt="" />
+										</div>
+										<div class="product__card_wish">
+											<i class="product__card_wish-icon icon icon-heart"></i>
+										</div>
+										<div class="product__card_labels">
+											<div class="product__card_label hitproduct">
+												Хит продаж
+											</div>
+											<div class="product__card_label newproduct ">
+												Новинка
+											</div>
+											<div class="product__card_label  promotionproduct">
+												Акция
+											</div>
+										</div>
+									</a>
+									<div class="product__card_infobox">
+										<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+										<div class="product__card_testimony">Легкое дыхание</div>
+										<div class="product__card_price">1500pуб.</div>
+									</div>
+									<div class="product__card_addcart">
+										<button class="product__card_addcart-btn">В корзину</button>
+										<div class="product__card_quantity">
+											<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+											<input
+												class="product__card_quantity-input"
+												type="number"
+												id=""
+												step="1"
+												min="0"
+												max=""
+												name=""
+												value="1"
+												title="Кол-во"
+												size="4"
+												placeholder=""
+												autocomplete="off"
+											/>
+											<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__slide swiper-slide">
+								<div class="product__card">
+									<a class="product__card_link" href="#">
+										<div class="product__card_imgbox">
+											<img class="product__card_img" src="img/product-1.png" alt="" />
+										</div>
+										<div class="product__card_wish">
+											<i class="product__card_wish-icon icon icon-heart"></i>
+										</div>
+										<div class="product__card_labels">
+											<div class="product__card_label hitproduct">
+												Хит продаж
+											</div>
+											<div class="product__card_label newproduct ">
+												Новинка
+											</div>
+											<div class="product__card_label  promotionproduct">
+												Акция
+											</div>
+										</div>
+									</a>
+									<div class="product__card_infobox">
+										<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+										<div class="product__card_testimony">Легкое дыхание</div>
+										<div class="product__card_price">1500pуб.</div>
+									</div>
+									<div class="product__card_addcart">
+										<button class="product__card_addcart-btn">В корзину</button>
+										<div class="product__card_quantity">
+											<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+											<input
+												class="product__card_quantity-input"
+												type="number"
+												id=""
+												step="1"
+												min="0"
+												max=""
+												name=""
+												value="1"
+												title="Кол-во"
+												size="4"
+												placeholder=""
+												autocomplete="off"
+											/>
+											<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact__wraperbox wow animate__fadeInUp">
+					<div class="container">
+						<div class="contact__wraper ">
+							<div class="contact__forms ">
+								<div class="contact__forms_title">
+									Нужна консультация специалиста?
+								</div>
+								<div class="contact__forms_text">
+									Заполните форму, мы с ваши свяжемся в самое ближайшее время.
+								</div>
+								<div class="contact__forms_box">
+									<input class="contact__forms_place" placeholder="Ваше имя"></input>
+								</div>
+								<div class="contact__forms_box">
+									<input class="contact__forms_place" placeholder="Ваш телефон"></input>
+								</div>
+								<div class="contact__forms_box">
+									<input class="contact__forms_place" placeholder="email"></input>
+								</div>
+								<div class="contact__forms_box ">
+									<textarea class="contact__forms_place textarea" placeholder="Напишите ваш вопрос"></textarea>
+								</div>
+								<form  class="contact__forms_checkbox ">
+									<input type="checkbox" required > Даю согласие на обработку персональных данных
+								</form>
+								<button class="contact__forms_button">
+									Отправить
+								</button>
+							</div>
+							<div class="contact__imagebox">
+								<img class="contact__imagebox_img" src="img/contactform.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<nav class="footer__nav">
+							<span class="footer__nav_title">Навигация</span>
+							<ul class="footer__menu">
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_about.html">О компании</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_products.html">Продукция</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_certificate.html">Сертификаты</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_contact.html">Контакты</a>
+								</li>								
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_questions.html">Частые вопросы</a>
+								</li>
+							</ul>
+						</nav>
+						<nav class="footer-nav">
+							<span class="footer__nav_title">Личный кабинет</span>
+							<ul class="footer__menu">
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_authorization.html">Вход</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_registration.html">Регистрация</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_delivery.html">Доставка и оплата</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__contacts" itemscope itemtype="http://schema.org/Organization">
+							<div class="footer__contacts_item">
+								<meta itemprop="name" content="Site" />
+								<div class="footer__contacts_phone">
+									<div class="footer__contacts_phone-line">
+										<i class="footer__contacts_phone-icon icon icon-phone"></i>
+										<a class="footer__contacts_phone-link" href="tel:88005005261" itemprop="telephone">
+											<span itemprop="telephone">8 800 500 52 61</span>
+										</a>
+									</div>
+									<span class="footer__contacts_phone-text">Звонок по России бесплатый</span>
+								</div>
+							</div>
+							<div class="footer__contacts_item">
+								<div class="footer__contacts_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									Россия, г. Санкт-Петербург, Шоссе Южное, д. 55, стр. 5
+								</div>
+							</div>
+							<div class="footer__contacts_item">
+								<div class="footer__contacts_email">
+									<span class="footer__contacts_email-text">E-mail:</span>
+									<a class="footer__contacts_email-link" href="emailto:maks-servis2012@mail.ru">
+										<span itemprop="email">maks-servis2012@mail.ru</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__logo">
+							<a class="footer__logo_link" href="#">
+								<img class="footer__logo_img" src="img/logo.svg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						<a class="footer__copyright_link" href="#">Создание и продвижение сайтов — Siteuper</a>
+						<span class="footer__copyright_text" href="#">© 2022. Все права защищены.</span>
+						<a class="footer__copyright_link" href="#">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

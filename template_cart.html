@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head itemscope itemtype="http://schema.org/WPHeader">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta itemprop="description" name="description" content="описание_страницы" />
+		<meta itemprop="keywords" name="keywords" content="ключевые_слова_для_страницы" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/fontello.css" />
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+
+		<title itemprop="headline">ЗдравАлтай</title>
+	</head>
+	<body>
+	<div class="site" id="siteSize">
+			<header class="header">
+				<nav class="header__nav"  id="myHeader" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+					<div class="container">
+						<div class="header__wrap">
+							<ul  class="header__menu ">								
+								<li class="header__menu_item ">
+									<a class="header__menu_link  " href="template_about.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">О компании</span>
+									</a>
+								</li>
+								<li class="header__menu_item">
+									<div class="header__menu_link" href="#" itemprop="url">
+										<div class="dropdown">
+											<a  href="template_products.html" class="header__menu_text dropbtn" itemprop="name">Продукция <img id="galka" class="galka dropbtn" src="img/galka.svg" alt=""></a>
+											<div id="myDropdown" class="dropdown-content">
+											<a href="template_news.html"><img src="img/Ellipse.svg" alt="">	Сиропы на основе растительного сырья</a> 
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Чай на основе алтайских трав и ягод</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Сухие напитки </a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Бальзамы безалкогольные</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Пищевые экстракты</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Медово-растительные бальзамы</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Каши быстрого приготовления</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Напитки растворимые</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Кремы косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Гели косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Гель эротический </a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Бальзамы косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Лосьоны косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Маски косметические</a>
+											<a href="#"><img src="/img/Ellipse.svg" alt="">   Мед</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="header__menu_item">
+									<a class="header__menu_link" href="template_certificate.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">Сертификаты</span>
+									</a>
+								</li>
+								<li class="header__menu_item">
+									<a class="header__menu_link" href="template_contact.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">Контакты</span>
+									</a>
+								</li>
+								<li class="header__menu_item">
+									<a class="header__menu_link" href="template_delivery.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">Доставка и оплата</span>
+									</a>
+								</li>
+								<li class="header__menu_item">
+									<a class="header__menu_link" href="template_news.html" itemprop="url">
+										<span class="header__menu_text" itemprop="name">Новости</span>
+									</a>
+								</li>
+							</ul>
+							<div class="header__burger">
+								<div class="header__burger_container" onclick="xFunction(this)">
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+									<div class="bar3"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="header__main">
+					<div class="container">
+						<div class="header__inner">
+							<div class="header__logo">
+								<a class="header__logo_link" href="/">
+									<img class="header__logo_img" src="img/logo.svg" alt="" />
+								</a>
+							</div>
+							<div class="header__search">
+								<form class="search__form" action="">
+									<input class="search__input" type="text" placeholder="Поиск" />
+									<button class="search__submit">
+										<i class="icon icon-search"></i>
+									</button>
+								</form>
+							</div>
+							
+							<div class="header__contacts">
+								<div class="header__contacts_phone">
+									<i class="header__contacts_icon icon icon-phone"></i>
+									<a class="header__contacts_link" href="tel:88005005261">8 800 500 52 61</a>
+								</div>
+								<span class="header__contacts_text">Звонок по России бесплатый</span>
+							</div>
+							<ul class="header__personal">
+								<li class="header__personal_item">
+									<a class="header__personal_item-link" href="#">
+										<i class="header__personal_item-icon icon icon-heart"></i>
+										<span class="header__personal_item-counter">10</span>
+									</a>
+								</li>
+								<li class="header__personal_item">
+									<a class="header__personal_item-link" href="#">
+										<i class="header__personal_item-icon icon icon-cart"></i>
+										<span class="header__personal_item-counter"></span>
+									</a>
+								</li>
+								<li class="header__personal_item">
+									<a class="header__personal_item-link" href="#">
+										<i class="header__personal_item-icon icon icon-user"></i>
+									</a>
+								</li>
+							</ul>
+							<div onclick="openNav()" class="header__burger">
+								<div class="header__burger_container" >
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+									<div class="bar3"></div>
+								</div>
+							</div>
+						</div>
+						<div class="header__wrap">
+							<ul  class="header__menu  ">
+								<div id="myNav" class="overlay">
+									<div class="overlay__wrap">
+										<div class="header__searchmini">
+											<form class="search__formmini" action="">
+												<input class="search__inputmini" type="text" placeholder="Поиск" />
+												<button class="search__submitmini">
+													<i class="icon icon-search"></i>
+												</button>
+											</form>
+										</div>
+										<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+									</div>
+									<li class="header__menu_item ">
+										<a class="header__menu_link  " href="template_about.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">О компании</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<div class="header__menu_link" href="#" itemprop="url">
+											<div class="dropdown">
+												<span onclick="myFunction()" class="header__menu_text dropbtn" itemprop="name">Продукция <img id="galka" class="galka dropbtn" src="img/galka_grey.svg" alt=""></span>
+												<div id="myminiDropdown" class="dropdown-content">
+												<a  class="dropdown__content_link" href="template_news.html"><img src="img/Ellipse.svg" alt="">	Сиропы на основе растительного сырья</a> 
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Чай на основе алтайских трав и ягод</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Сухие напитки </a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Бальзамы безалкогольные</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Пищевые экстракты</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Медово-растительные бальзамы</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Каши быстрого приготовления</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Напитки растворимые</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Кремы косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Гели косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Гель эротический </a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Бальзамы косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Лосьоны косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Маски косметические</a>
+												<a  class="dropdown__content_link" href="#"><img src="/img/Ellipse.svg" alt="">   Мед</a>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_certificate.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Сертификаты</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_contact.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Контакты</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_delivery.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Доставка и оплата</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_news.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Новости</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_news.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Избранное</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_news.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Корзина</span>
+										</a>
+									</li>
+									<li class="header__menu_item">
+										<a class="header__menu_link" href="template_news.html" itemprop="url">
+											<span class="header__menu_text" itemprop="name">Личный кабинет</span>
+										</a>
+									</li>
+								</div>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- <div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a class="breadcrumbs-link" href="/" title="Главная" itemprop="item">
+								<span itemprop="name">Главная</span>
+								<meta itemprop="position" content="1" />
+							</a>
+						</li>
+						<li class="breadcrumbs-item">
+							&nbsp;/&nbsp;
+						</li>
+						<li class="breadcrumbs-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<span class="breadcrumbs-span" itemprop="item">
+								<span itemprop="name">Каталог</span>
+								<meta itemprop="position" content="2" />
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div> -->
+			<main class="main">
+				<div class="pages">
+					<div class="container">
+						<div class="productCart">
+							<div class="productCart__imagebox">
+								<img class="productCart__imagebox_img" src="/img/cart.png" alt="">
+							</div>
+							<div class="productCart__textbox">
+								<div class="productCart__title">
+									Лиственница сибирская "Чистые сосуды". Бальзам, 100мл
+								</div>
+								<div class="productCart__subtitle">
+									Легкое дыхание
+								</div>
+								<div class="productCart__points_wraper">
+									<div class="productCart__points">
+										<img class="productCart__points_image" src="/img/Vector.svg" alt="">
+										<div class="productCart__points_text">Бальзам предотвращает изменения в венах и сосудах</div>
+									</div>
+									<div class="productCart__points">
+										<img class="productCart__points_image" src="/img/Vector.svg" alt="">
+										<div class="productCart__points_text">Стабилизирует артериальное давление</div>
+									</div>
+									<div class="productCart__points">
+										<img class="productCart__points_image" src="/img/Vector.svg" alt="">
+										<div class="productCart__points_text">Положительно влияет на зрение и сердечную деятельность, полезен при мигренях</div>
+									</div>
+									<div class="productCart__points">
+										<img class="productCart__points_image" src="/img/Vector.svg" alt="">
+										<div class="productCart__points_text">Полезен при мигренях, головных болях и нарушении функций головного мозга.</div>
+									</div>
+								</div>
+								<div class="productCart__stock">
+									В наличии
+								</div>
+								<div class="productCart__box">
+									<div class="productCart_prices">
+										<div class="productCart__price_new">
+											500 руб.
+										</div>
+										<div class="productCart__price_old">
+											<s> 900 руб.</s> 
+										</div>
+									</div>
+									<div class="product__card_addcart cartadd">
+										<button class="product__card_addcart-btn">Купить</button>
+										<div class="product__card_quantity">
+											<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+											<input
+												class="product__card_quantity-input"
+												type="number"
+												id=""
+												step="1"
+												min="0"
+												max=""
+												name=""
+												value="1"
+												title="Кол-во"
+												size="4"
+												placeholder=""
+												autocomplete="off"
+											/>
+											<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+										</div>
+									</div>
+									<div class="productCart__box_icons">
+										<i class="product__card_wish-icon icon icon-heart"></i>
+										<i class="product__card_wish-icon icon icon-cart"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs-box">
+							<ul class="tabs">
+								<li class="tabs_li active" rel="tab1">Информация</li>
+								<li rel="tab2"class="tabs_li">Показания</li>
+								<li rel="tab3"class="tabs_li">Состав</li>
+								<li rel="tab4"class="tabs_li">Инструкция</li>
+								<li rel="tab5"class="tabs_li tab_last">Отзывы</li>
+							</ul>
+							<div class="tabs__content">
+								<h3 class="d_active tab_accordion" rel="tab1">Информация</h3>
+								<div id="tab1" class="tab_content" style="display: block;">
+										<p class="tabstext"><b class="tabstext__strong">Сосуды </b>– это наша система питания, по сосудам движется сама жизнь. 
+										Перекрой важный участок трассы – и жизнь остановится.
+										При нынешней ситуации все усугубляется коварством COVID-19, который вызывает множество тяжёлых осложнений, в том числе поражает кровеносную систему.
+										Сосуды воспаляются, теряют эластичность, ухудшается их проходимость,
+										кровь сгущается, способствуя образованию тромбов.
+										Врачи отмечают такие осложнения даже у тех, у кого до болезни сосуды были в порядке...
+										</p>
+										<br>	
+										<button class="readmore" id="myBtn">Читать статью</button>
+										<div id="myModal" class="modal">
+										<div class="modal-content">
+											<span class="close">&times;</span>
+											<p class="tabstext"><b class="tabstext__strong">Сосуды </b>– это наша система питания, по сосудам движется сама жизнь. 
+												Перекрой важный участок трассы – и жизнь остановится.
+												При нынешней ситуации все усугубляется коварством COVID-19, который вызывает множество тяжёлых осложнений, в том числе поражает кровеносную систему.
+												Сосуды воспаляются, теряют эластичность, ухудшается их проходимость, кровь сгущается, способствуя образованию тромбов. Врачи отмечают такие осложнения даже у тех, у кого до болезни сосуды были в порядке...
+													Заведующий кафедрой сосудистой хирургии московского медицинского университета им. И.М. Сеченова, профессор, практикующий нейрохирург, заслуженный врач России, Архипов Михаил Павлович.
+													– Михаил Павлович, вы постоянно говорите, что сосуды это 90% здоровья организма? Почему так?
+													– Какой самый большой орган в теле человека? Мало кто знает. Даже студенты-медики часто ошибаются. На самом деле самый большой орган – это наша сосудистая система. 2,5 раза можно опоясать планету сосудами 1 человека Представьте. Если «расплести» все сосуды человеческого тела и связать их в одну длинную нить, то длина этой нити будет примерно 100 000 километров. Чтобы было понятнее – длина экватора Земли 40 000 километров. Как вам такой масштаб?
+													Сосуды – это не просто трубочки, по которым течёт кровь. Это сложный и единый орган, сбой в котором сразу же вылезает в болячку.
+													Плохие сосуды на ногах – варикоз, постоянные отёки и вечная тяжесть в ногах.
+													Забились сосуды, питающие печень – гепатоз. Горечь во рту. Съел чуть жирного - получи горькую отрыжку.
+													Ослабли и замусорились сосуды в суставах – усыхают хрящи. Хрустят и болят суставы, одолевает остеохондроз, вылезают грыжи.
+													Потеряли тонус сосуды прямой кишки – распускается лиловыми шишками геморрой.
+													Глазные сосуды – падает зрение, рябит в глазах, прилетают мушки. Развивается катаракта. Покраснение глаз, что часто мы списываем на усталость, на самом деле микро-кровоизлияния – разрывы мельчайших глазных капилляров.
+													Затрудняется мозговое кровообращение – получите головокружение, шум в ушах и забывчивость.
+													И конечно же, царица плохих сосудов, её величество Гипертония. А гипертония – это мать инсульта и сестра инфаркта.
+													Поэтому я не устану повторять: хотите жить полноценной жизнью – почистите и восстановите сосуды. Чистые сосуды – это ключ к избавлению от 90% хронических заболеваний, некоторые из которых считаются «неизлечимыми»
+													Чем ещё загрязняются сосуды, кроме холестерина?
+													– Все знают, что холестерин – зло. Именно он забивает наши сосуды, сужает просвет и нарушает кровообращение. Но ведь виновник не только он один? 6,1 кг общая масса загрязнений, которые накапливаются в сосудах к 50-ти годам.
+													Холестерин
+													– Да, вы правы. Холестериновые бляшки или как ещё их называют «атеросклеротические бляшки» составляют примерно 65-70% загрязнений сосудов. К 50-ти годам в сосудах человека накапливается до 5 кг холестериновых бляшек. Холестериновые отложения сужают просвет сосудов в 4-5 раз.
+													Представьте. Если нормальный просвет сосуда – это ваш палец, то 5 кг холестериновых бляшек уменьшает просвет до размера 4-х спичек.
+													Сами по себе холестериновые бляшки не представляют угрозы жизни. Да, качество жизни падает, повышается давление, головные боли и боли в суставах, слабость и апатия. Гораздо опаснее тромбовая масса, которая тоже накапливается в наших сосудах.
+													Тромбовая масса
+													Тромбов накапливается значительно меньше – «всего» около 800 грамм – 1 кг. Но их опасность в том, что они нестабильны. В любой момент тромб (сгусток крови) может оторваться и отправиться в путешествие по вашим сосудам на поиски жертвы.
+													Если тромб достаточно крупный, то он наглухо «запечатывает» сосуд-жертву. Случается ишемия – полное прекращение кровоснабжения органа, питающегося по этому сосуду.
+													Ишемический инсульт – закупорка сосуда мозга. Инфаркт – закупорка сердечной артерии. Ишемия печени, коллапс лёгкого, отказ почек. Геморрой это ни что иное, как ишемия сосудов прямой кишки. Закупорка даже маленьких сосудов ног, со временем приводит к некрозу – гангрене.
+													Кальциевая известь
+													Кальциевая известь в сосудах – это остатки химических медикаментов и пищевых добавок. Их накапливается к 50-ти годам грамм 300-400. Больше всего извести накапливается в сосудах головного мозга.
+													Опасность кальциевой извести в том, что она имеет острую, кристаллическую структуру. При резком сужении – спазме сосуда, вызванном стрессом или физическими нагрузками, или погодой, острый кристалл извести может проткнуть сосуд и привести к его разрыву. А разрыв сосуда головного мозга – это геморрагический инсульт.
+													4 явных признака плохих сосудов и ещё 7 скрытых
+													– Какие симптомы говорят о том, что мои сосуды забиты «грязью»? Как понять, что организм кричит нам «Почисти сосуды скорее!»?
+													45 лет – тот рубеж после которого обязательно нужно чистить сосуды. Засорение сосудов холестерином, тромбами, кальцинация это по сути естественный возрастной процесс. Конечно современная еда, медикаменты, курение и алкоголь ускоряют процесс «замусоривания» в 5-8 раз. Но все мы люди и от этого никуда не деться, в таком уж мире мы живём.
+													Четвёрка заболеваний, вызванная плохими сосудами:
+													1. Гипертония – главный признак мусорных сосудов
+													Если у вас есть диагноз Гипертония – дальше можете даже не читать. Гипертония – это царица плохих сосудов.
+													Страдаете от скачков давления? Оно постоянно повышено и приходится сидеть на лекарствах? Значит от сосудов осталось, дай Бог, 30% просвета. Остальное плотно залеплено холестериновыми бляшками, сгустками крови – тромбами и покрыто кальциевой известью.
+													Поэтому малейший стресс, изменение погоды, магнитная буря моментально отражаются на самочувствии. Подскакивает давление, голову начинает долбить молотком, выкручивать суставы.
+													2. Варикоз
+													Безобразные выпученные вены на ногах, тяжесть и боль, отёки. Холестериновая грязь и тромбы «заклинивают» венозные клапаны. Постепенно появляются сосудистые «звёздочки», которые потом превращаются в сосудистую «сетку». А сетка уже развивается в полноценный варикоз.
+													3. Геморрой
+													Когда забиваются сосуды прямой кишки, которые отводят кровь, вспухают геморроидальные узлы. Если же первыми забились сосуды, подводящие кровь, - возникают анальные трещины.
+													4. Остеохондроз
+													Это недостаток кровообращения в хрящах. Хрящи твердеют и начинают стираться, не успевая восстановиться. Не обновляются и усыхают. Теряют способность мягко амортизировать. Соли не вымываются и начинают неудержимо нарастать, образуя «вдовий» горб.
+													7 намекающих симптомов:
+													1. Отёки
+													Грязные сосуды не успевают откачивать жидкость. Нарушается водно-солевой обмен. К вечеру ноги отекают так, что носки впиваются в щиколотки, оставляя вмятины. Одутловатое лицо и мешки под глазами. Пальцы, с которых не получается снять кольца. Вздутый живот говорит об отёках внутренних органов.
+													2. Шум в ушах
+													От едва слышного тонкого писка до громкого воя и звона, мешающих сосредоточиться. Это следствие повышенного напряжения сосудов головного мозга, которые оказывают давление на барабанные перепонки.
+													3. Головокружение
+													Чувство «пьяной» головы, резкие и внезапные приступы головокружения говорят о том, что «голодает» ваш вестибулярный аппарат. Зачастую вместе с ним страдает и слух.
+													4. Бессонница
+													Чувствуете себя сонным и вялым, а укладываясь в кровать полночи не можете уснуть? Это из-за недостатка кровоснабжения гипофиза. Он перестаёт вырабатывать мелатонин - гормон сна.
+													5. Упадок сил
+													Совсем нет сил. Ничего не хочется делать. Хочется просто лежать и есть. Такое чувство возникает из-за того, что организм переходит в режим экономии энергии. Органы не получают по грязным сосудам полноценного питания и, чтобы не умереть, ваш организм стремится максимально снизить активность.
+													6. Зрительные аномалии
+													«Мушки» перед глазами, рябь, дымка и туман в глазах. Это симптомы сосудистой недостаточности глаз
+													7. Боли в суставах
+													На погоду ломит и крутит суставы. Просыпаясь утром, чувствуете себя не бодрым и отдохнувшим, а закостеневшим полупарализованным инвалидом. Приходится некоторое время расхаживаться и разминать задеревеневшие суставы. Это теряет свои свойства синовиальная жидкость, склеивает суставы, как тянучее тесто.
+													Есть хотя бы один признак? Сосуды отчаянно бьют в набат, требуя уборки и питания.
+													Чем очистить сосуды от холестерина, тромбов и извести?
+													– Давайте конкретный врачебный совет, вот есть условная Валентина Петровна из Воронежа. 57 лет, замужем, имеет лишний вес, гипертонию и варикоз. На погоду реагирует с точностью барометра – ломит суставы, одолевает слабость и сонливость, раскалывается голова.
+													– Как помочь Валентине Петровне? Чем ей почистить сосуды, не идя на поклон к врачам и не выслушивая нраво­учения вроде «Вам бы похудеть», «Вам бы заняться спортом», «Вам бы правильно питаться», «Это у вас возрастное» и всё в таком духе?
+													Большинство аптечных препаратов не лечат и помогают, а калечат и подсаживают.
+													– Да, медицина в регионах у нас, к сожалению, хромает на обе ноги. Поэтому нежелание обращаться к врачам я прекрасно понимаю. Но Валентина Петровна прекрасно справится сама.
+													Для безопасной чистки сосудов я могу назвать только одно средство с безупречной репутацией – Лиственница сибирская. Чистые сосуды. Лиственница сибирская продлевает жизнь на 11-17 лет, наполняя её энергией и лёгкостью, а не ценой мучений и утраты последних жизненных сил.
+													Безопасный, как травяной чай. А по эффективности стоит на втором месте после хирургической чистки сосудов - стентирования. Но в отличии от хирургии не имеет осложнений и побочных эффектов. Курсом очищает все сосуды организма. От крупных толстых артерий до мельчайших нежных капилляров.
+													«Лиственница сибирская. Чистые сосуды» – это смесь растительных экстрактов, которые пробуждают живые молекулы. Эти аккуратные уборщики выметают из сосудов холестериновую слизь, прилипшие к стенкам сгустки крови – тромбы, кальциевый налёт – остатки медикаментов. Всё, что мешает свободному течению крови.
+													Грязь, которая копилась годами, отравляя вам жизнь, вымывается за 1,5-2 месяца регулярного приёма.
+													За 1,5 месяца «Лиственница сибирская» растворяет и выводит 4 кг холестериновых бляшек. Разжижает 800-900 грамм тромбовой массы и вымывает 350-400 грамм кальциевой извести.
+													Вместе с ними растворяются головные боли, рассеивается шум в ушах. Мозг, получая полноценное питание по чистым сосудам, работает со скоростью суперкомпьютера. Мысли ясные и чёткие.
+													Чувства обостряются, вы слышите приятные звуки, до которых раньше не было дела. Улучшается слух, вы можете разобрать даже тихую беседу в соседней комнате.
+													Запахи играют новыми красками. Уходит заложенность носа, хронический насморк, аллергии. Бронхи расправляются. Дыхание ровное и свободное. Свежий воздух, наполняя лёгкие, растекается по телу приятными волнами, вызывая ощущение лёгкой эйфории.
+													Вкусы становятся яркими и насыщенными. Привычная еда доставляет непривычное удовольствие. Вы едите меньше, а наедаетесь больше. Пропадает постоянная тяга к сладкому и жирному.
+													– Наша Валентина Петровна наверняка испробовала сотни разных добавок и таблеток, поставила на себе крест и зареклась больше не выкидывать деньги на сомнительные чудо средства.
+													Наши сомнения — предатели, заставляют нас лишаться многого, 
+													чего мы могли бы достичь, из-за страха попытаться это сделать. 
+													– Давайте я вам расскажу одну поучительную историю про недоверие.
+													В 1928 году был изобретён первый антибиотик – пенициллин. Он с лёгкостью исцелял дизентерию и тиф, от которых в то время люди неизбежно умирали. Но большинство людей не верили, что он может помочь, потому что уже 1000 раз обжигались в попытках вылечиться. Те, кто обжегся 1000 раз и не побоялся попробовать в 1001-й – вылечились. А те, кто сдался, махнули рукой со словами «Очередное чудо-средство, которое не поможет» и погибли, хотя спасение было прямо у них перед носом. Как в своё время пенициллин победил господствующие в то время болезни: дизентерию, тиф, лёгочную чуму. Так, со временем, «Лиственница сибирская. Чистые сосуды» искоренит болезни сосудов. – Я тоже считаю, что сомнения – наш злейший враг, поэтому не боюсь пробовать новое.</span></p>
+										</div>
+										</div>	
+								</div>
+								<h3 class="tab_accordion" rel="tab2">Показания</h3>
+								<div id="tab2" class="tab_content" style="display: none;">
+									<p class="tabstext">
+																	<b class="tabstext__strong">Показания к применению:</b> "Лиственница сибирская. Чистые сосуды" предотвращает изменения в венах 
+																	и сосудах, стабилизирует артериальное давление, благотворно влияет на зрение и сердечную деятельность, полезна при мигренях, головных болях и нарушении функций головного мозга. Растительные компоненты комплекса улучшают эластичность сосудов и вен, помогают при синдроме хронической усталости, умственном 
+																	и физическом переутомлении, ослаблении концентрации и рассеянности, неврозах и стрессах, депрессивных состояниях, инсомнии. Состав оказывает положительное действие на начальных стадиях развития склероза 
+																	и старческого слабоумия, при сосудистых патологиях – для профилактики и снятия последствий инсульта 
+																	или инфаркта миокарда, ишемической болезни сердца, миокардита, анемии, атеросклероза, гипертонии, невралгии.
+																</p>
+																<p class="tabstext">
+																	<b class="tabstext__strong">Применения:</b> По 1 капсуле 3 раза в день. Капсулу вскрыть, растворить в 100 мл теплой воды, выпить за 30 минут до еды.
+																</p>
+																<p class="tabstext">
+																	<b class="tabstext__strong">Противопоказания:</b> Индивидуальная непереносимость компонентов
+																</p>
+								</div>
+								<h3 class="tab_accordion" rel="tab3">Состав</h3>
+								<div id="tab3" class="tab_content" style="display: none;">
+									<p class="tabstext"> <b class="tabstext__strong">Состав:</b> Экстракт лиственницы сибирской, 
+										экстракт черники (плоды), мумиё, экстракт клевера, экстракт бадана, экстракт облепихи,
+										экстракт зелёного чая.
+										Белки – 0 г, жиры – 0 г, углеводы – 3 г, минеральные компоненты – 5 г
+									</p>
+									<p class="tabstext"> <b class="tabstext__strong">Рекомендованный курс:</b> 60 дней – 6 упаковок, 2-3 курса в год
+									</p>
+									<p class="tabstext"> <b class="tabstext__strong">Масса:</b> 30 капсул по 400 мг
+									</p>
+									<p class="tabstext"> <b class="tabstext__strong">Энергетическая ценность::</b> 30 капсул по 400 мг	
+									</p>
+									<p class="tabstext"> <b class="tabstext__strong">Срок хранения:</b> 12 месяцев при температуре не выше 20 °С
+									</p>
+									<p class="tabstext"> <b class="tabstext__strong">Декларация о соответствии:</b> ЕАЭС N RU Д-RU.РА01.В.56514/21
+									</p>
+									<p class="tabstext"> <b class="tabstext__strong">Производитель:</b> ООО "Олимед"
+									</p>
+								</div>
+								<h3 class="tab_accordion" rel="tab4">Инструкция</h3>
+								<div id="tab4" class="tab_content" style="display: none;">
+									<p class="tabstext"> <b class="tabstext__strong">Инструкция:</b> "Лиственница сибирская. Чистые сосуды" предотвращает изменения в венах и сосудах,
+										стабилизирует артериальное давление, благотворно влияет на зрение и сердечную деятельность, полезна при мигренях, головных болях и нарушении функций головного мозга. Растительные компоненты комплекса улучшают эластичность сосудов и вен, помогают при синдроме хронической усталости, умственном и физическом переутомлении, ослаблении концентрации и рассеянности, неврозах и стрессах, депрессивных состояниях, инсомнии. Состав оказывает положительное действие на начальных стадиях развития склероза и старческого слабоумия, при сосудистых патологиях – для профилактики и снятия последствий инсульта или инфаркта миокарда, ишемической болезни сердца, миокардита, анемии, атеросклероза, гипертонии, невралгии.
+									</p>
+								</div>
+								<h3 class="tab_accordion" rel="tab5">Отзывы</h3>
+								<div id="tab5" class="tab_content" style="display: none;">
+									<div class="feedback">
+										<div class="feedback__title">
+											Ваш отзыв
+										</div>
+										<div class="feedback__stars">
+											<div class="rating-area">
+												<input type="radio" id="star-5" name="rating" value="5">
+												<label for="star-5" title="Оценка «5»"></label>	
+												<input type="radio" id="star-4" name="rating" value="4">
+												<label for="star-4" title="Оценка «4»"></label>    
+												<input type="radio" id="star-3" name="rating" value="3">
+												<label for="star-3" title="Оценка «3»"></label>  
+												<input type="radio" id="star-2" name="rating" value="2">
+												<label for="star-2" title="Оценка «2»"></label>    
+												<input type="radio" id="star-1" name="rating" value="1">
+												<label for="star-1" title="Оценка «1»"></label>
+											</div>
+											
+										</div>
+										<div class="feedback__forms">
+											<div class="contact__forms ">
+												<div class="contact__forms_box">
+													<input class="contact__forms_place" placeholder="Ваше имя"></input>
+												</div>
+												<div class="contact__forms_box">
+													<input class="contact__forms_place" placeholder="email"></input>
+												</div>
+												<div class="contact__forms_box ">
+													<textarea class="contact__forms_place textarea" placeholder="Ваш отзыв"></textarea>
+												</div>												
+												<button class="contact__forms_button">
+													Отправить
+												</button>
+											</div>
+										</div>
+										<div class="feedback__wraper" >
+											<div class="feedback__wraper_slider">
+												<div class="feedback__slider swiper">
+													<div class="swiper-wrapper">
+														<div class="feedback__slider_slide swiper-slide">
+															<div class="feedback__wraper_box" id="feedback-3">
+																<div class="feedback__wraper_boxone">
+																	<div class="feedback__message_imagebox">
+																		<img class="feedback__message_img" src="/img/feedback/5.jpg" alt="">
+																	</div>
+																	<div class="feedback__wraper_info">
+																		<div class="feedback__message_name">
+																			Фролова В.Г.
+																		</div>
+																		<div class="feedback__message_city">
+																			г. Мурманск
+																		</div>
+																		<div class="rating-mini">
+																			<span class="active"></span>	
+																			<span class="active"></span>    
+																			<span class="active"></span>  
+																			<span class="active"></span>
+																			<span></span>
+																		</div>
+																	</div>
+																	
+																</div>
+																	
+																<div class="feedback__message">
+																	<div class="feedback__message_stars">
+																		
+																	</div>
+																	<div class="feedback__message_text">
+																		В детстве перенесла операцию на сердце, но поддерживать его нужно всю жизнь. Родители меня всегда опекали и сейчас продолжают опекать. Следят за моим состоянием, всегда что-то советуют и лечат травами. Но одышка, аритмия, скачки артериального давления все равно меня преследовали. Недавно мама мне принесла новый препарат «Лиственница сибирская. Чистые сосуды», после двухмесячного курса почувствовала значительное улучшение: артериальное давление восстановилось, аритмия стала беспокоить меньше, сейчас буду принимать второй курс и надеюсь вообще избавлюсь от своих недугов, ведь у меня семья, и нужна я им здоровая и счастливая.
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="feedback__slider_slide swiper-slide">
+															<div class="feedback__wraper_box" id="feedback-1">
+																<div class="feedback__wraper_boxone">
+																	<div class="feedback__message_imagebox">
+																		<img class="feedback__message_img" src="/img/feedback/6.jpg" alt="">
+																	</div>
+																	<div class="feedback__wraper_info">
+																		<div class="feedback__message_name">
+																			Мария Ефимовна
+																		</div>
+																		<div class="feedback__message_city">
+																			г. Качканар
+																		</div>
+																		<div class="rating-mini">
+																			<span class="active"></span>	
+																			<span class="active"></span>    
+																			<span class="active"></span>  
+																			<span class="active"></span>
+																			<span></span>
+																		</div>
+																	</div>
+																	
+																</div>
+																	
+																<div class="feedback__message">
+																	<div class="feedback__message_stars">
+																		
+																	</div>
+																	<div class="feedback__message_text">
+																		Благодаря Вашей продукции я снова могу свободно передвигаться. А еще недавно у меня так сильно болела голова, было головокружение, болели ноги, сердце прихватывало, я не мог по дому передвигаться сам. Вый­ти из этого состояния помогла «Лиственница сибирская. Чистые сосуды». Уже после первого курса мне стало значительно лучше, голова гораздо меньше болела и практически не кружилась, отек с ног стал сходить. Конечно, после таких результатов я стал принимать дальше. Сейчас пришел сам к Вам на выставку. Пропил с перерывами 4 курса, передвигаюсь без помощи, ноги теперь слушаются, головокружении и головных болей нет. Пришел сказать большое спасибо.
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="feedback__slider_slide swiper-slide">
+															<div class="feedback__wraper_box" id="feedback-7">
+																<div class="feedback__wraper_boxone">
+																	<div class="feedback__message_imagebox">
+																		<img class="feedback__message_img" src="/img/feedback/7.jpg" alt="">
+																	</div>
+																	<div class="feedback__wraper_info">
+																		<div class="feedback__message_name">
+																			А.В. Комлева
+																		</div>
+																		<div class="feedback__message_city">
+																			г. Санкт-Петербург
+																		</div>
+																		<div class="rating-mini">
+																			<span class="active"></span>	
+																			<span class="active"></span>    
+																			<span class="active"></span>  
+																			<span class="active"></span>
+																			<span></span>
+																		</div>
+																	</div>
+																	
+																</div>
+																	
+																<div class="feedback__message">
+																	<div class="feedback__message_stars">
+																		
+																	</div>
+																	<div class="feedback__message_text">
+																		Полгода назад я первый раз пришла к вам на выставку – сильно болело сердце из-за ишемии и стенокардии, гипертония не унималась.
+																		Лечилась под наблюдением врача и в больнице постоянно лежала. Были постоянные головные боли, головокружения, шум в ушах, жжение в сердце. 
+																		От таблеток становилось чуть легче, но потом все снова возвращалось и с каждым годом все только хуже становилось, сколько ни лежи в больницах. А после того как начала пользоваться Лиственницей сибирской Чистые сосуды – все изменилось! Сердце работает как часы, без боли и сбоев, голова не болит и не кружится, давление сейчас в норме, шум в ушах прошел, вернулся ко мне здоровый сон, силы появились дальше жить.
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="feedback__pagination swiper-pagination"></div>
+													<div class="feedback__prev swiper-button-prev"></div>
+													<div class="feedback__next swiper-button-next"></div>
+												</div>
+											</div>											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="attention">
+							<div  class="attention__title"> <b class="attention__text_strong">Внимание:</b>Не является лекарственным средством.</div>
+							<div  class="attention__subtitle">Перед применением необходимо проконсультироваться с врачем.</div>
+						</div>
+						<div class="benefits-block wow animate__fadeInUp">
+							<div class="benefits-block-inner">
+								<div class="benefits-block-info">
+									<div class="benefits-block-title title">Наши препараты безопасны для здоровья</div>
+									<div class="benefits-block-imgbox">
+										<img class="benefits-block-img" src="img/benefits-main.png" />
+									</div>
+								</div>
+								<div class="benefits-block-line">
+									<img src="img/benefits-slider/line.svg" alt="">
+								</div>
+								<div class="benefits-block-sliderbox">
+									<div class="benefits-block-subtitle">В состав входят</div>
+									<div class="benefits-slider swiper">
+										<div class="swiper-wrapper ">
+											<div class="benefits-slide swiper-slide">
+												<div class="benefits-slide_title">Лиственница Сибирская</div>
+												<div class="benefits-slide_text">
+													Однодомное хвойное растение семейства сосновых. В отличие от других хвойных растений, лиственница сбрасывает свою хвою ежегодно, одновременно 
+													с лиственными породами.
+												</div>
+												<img src="img/benefits-slider/el.jpg" alt="">
+	
+											</div>
+											<div class="benefits-slide swiper-slide">Slide 2</div>
+											<div class="benefits-slide swiper-slide">Slide 3</div>
+										</div>
+										
+									</div>
+									<div class="benefits-next swiper-button-next"></div>
+									<div class="benefits-prev swiper-button-prev"></div>
+									<div class="benefits-pag swiper-pagination"></div>
+								</div>
+							</div>
+						</div>
+						<div class="contact__wraperbox wow animate__fadeInUp">
+							<div class="contact__wraper ">
+								<div class="contact__forms ">
+									<div class="contact__forms_title">
+										Нужна консультация специалиста?
+									</div>
+									<div class="contact__forms_text">
+										Заполните форму, мы с ваши свяжемся в самое ближайшее время.
+									</div>
+									<div class="contact__forms_box">
+										<input class="contact__forms_place" placeholder="Ваше имя"></input>
+									</div>
+									<div class="contact__forms_box">
+										<input class="contact__forms_place" placeholder="Ваш телефон"></input>
+									</div>
+									<div class="contact__forms_box">
+										<input class="contact__forms_place" placeholder="email"></input>
+									</div>
+									<div class="contact__forms_box ">
+										<textarea class="contact__forms_place textarea" placeholder="Напишите ваш вопрос"></textarea>
+									</div>
+									<form  class="contact__forms_checkbox ">
+										<input type="checkbox" required > Даю согласие на обработку персональных данных
+									</form>
+									<button class="contact__forms_button">
+										Отправить
+									</button>
+								</div>
+								<div class="contact__imagebox">
+									<img class="contact__imagebox_img" src="img/contactform.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="product__block wow animate__fadeInUp">
+							<div class="product__block_head">
+								<div class="title">Сопутствующие товары</div>
+								<a class="product__block_more" href="">Смотреть все</a>
+							</div>
+							<div class="product__block_sliderbox">
+								<div class="product__slider sale-slider swiper">
+									<div class="swiper-wrapper product__slider_wrapper">
+										<div class="product__slide swiper-slide">
+											<div class="product__card">
+												<a class="product__card_link" href="#">
+													<div class="product__card_imgbox">
+														<img class="product__card_img" src="img/product-1.png" alt="" />
+													</div>
+													<div class="product__card_wish">
+														<i class="product__card_wish-icon icon icon-heart"></i>
+													</div>
+													<div class="product__card_labels">
+														<div class="product__card_label hitproduct">
+															Хит продаж
+														</div>
+														<div class="product__card_label newproduct ">
+															Новинка
+														</div>
+														<div class="product__card_label  promotionproduct">
+															Акция
+														</div>
+													</div>
+												</a>
+												<div class="product__card_infobox">
+													<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+													<div class="product__card_testimony">Легкое дыхание</div>
+													<div class="product__card_price">1500pуб.</div>
+												</div>
+												<div class="product__card_addcart">
+													<button class="product__card_addcart-btn">В корзину</button>
+													<div class="product__card_quantity">
+														<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+														<input
+															class="product__card_quantity-input"
+															type="number"
+															id=""
+															step="1"
+															min="0"
+															max=""
+															name=""
+															value="1"
+															title="Кол-во"
+															size="4"
+															placeholder=""
+															autocomplete="off"
+														/>
+														<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product__slide swiper-slide">
+											<div class="product__card">
+												<a class="product__card_link" href="#">
+													<div class="product__card_imgbox">
+														<img class="product__card_img" src="img/product-1.png" alt="" />
+													</div>
+													<div class="product__card_wish">
+														<i class="product__card_wish-icon icon icon-heart"></i>
+													</div>
+													<div class="product__card_labels">
+														<div class="product__card_label hitproduct">
+															Хит продаж
+														</div>
+														<div class="product__card_label newproduct ">
+															Новинка
+														</div>
+														<div class="product__card_label  promotionproduct">
+															Акция
+														</div>
+													</div>
+												</a>
+												<div class="product__card_infobox">
+													<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+													<div class="product__card_testimony">Легкое дыхание</div>
+													<div class="product__card_price">1500pуб.</div>
+												</div>
+												<div class="product__card_addcart">
+													<button class="product__card_addcart-btn">В корзину</button>
+													<div class="product__card_quantity">
+														<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+														<input
+															class="product__card_quantity-input"
+															type="number"
+															id=""
+															step="1"
+															min="0"
+															max=""
+															name=""
+															value="1"
+															title="Кол-во"
+															size="4"
+															placeholder=""
+															autocomplete="off"
+														/>
+														<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product__slide swiper-slide">
+											<div class="product__card">
+												<a class="product__card_link" href="#">
+													<div class="product__card_imgbox">
+														<img class="product__card_img" src="img/product-1.png" alt="" />
+													</div>
+													<div class="product__card_wish">
+														<i class="product__card_wish-icon icon icon-heart"></i>
+													</div>
+													<div class="product__card_labels">
+														<div class="product__card_label hitproduct">
+															Хит продаж
+														</div>
+														<div class="product__card_label newproduct ">
+															Новинка
+														</div>
+														<div class="product__card_label  promotionproduct">
+															Акция
+														</div>
+													</div>
+												</a>
+												<div class="product__card_infobox">
+													<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+													<div class="product__card_testimony">Легкое дыхание</div>
+													<div class="product__card_price">1500pуб.</div>
+												</div>
+												<div class="product__card_addcart">
+													<button class="product__card_addcart-btn">В корзину</button>
+													<div class="product__card_quantity">
+														<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+														<input
+															class="product__card_quantity-input"
+															type="number"
+															id=""
+															step="1"
+															min="0"
+															max=""
+															name=""
+															value="1"
+															title="Кол-во"
+															size="4"
+															placeholder=""
+															autocomplete="off"
+														/>
+														<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="product__slide swiper-slide">
+											<div class="product__card">
+												<a class="product__card_link" href="#">
+													<div class="product__card_imgbox">
+														<img class="product__card_img" src="img/product-1.png" alt="" />
+													</div>
+													<div class="product__card_wish">
+														<i class="product__card_wish-icon icon icon-heart"></i>
+													</div>
+													<div class="product__card_labels">
+														<div class="product__card_label hitproduct">
+															Хит продаж
+														</div>
+														<div class="product__card_label newproduct ">
+															Новинка
+														</div>
+														<div class="product__card_label  promotionproduct">
+															Акция
+														</div>
+													</div>
+												</a>
+												<div class="product__card_infobox">
+													<a class="product__card_title" href="#">Лиственница сибирская "Чистые сосуды". Бальзам, 100мл</a>
+													<div class="product__card_testimony">Легкое дыхание</div>
+													<div class="product__card_price">1500pуб.</div>
+												</div>
+												<div class="product__card_addcart">
+													<button class="product__card_addcart-btn">В корзину</button>
+													<div class="product__card_quantity">
+														<button class="product__card_quantity-btn minus" onclick="event.preventDefault();">-</button>
+														<input
+															class="product__card_quantity-input"
+															type="number"
+															id=""
+															step="1"
+															min="0"
+															max=""
+															name=""
+															value="1"
+															title="Кол-во"
+															size="4"
+															placeholder=""
+															autocomplete="off"
+														/>
+														<button class="product__card_quantity-btn plus" onclick="event.preventDefault();">+</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="sale-next swiper-button-next"></div>
+									<div class="sale-prev swiper-button-prev"></div>
+								</div>
+								<div class="sale-pag swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<nav class="footer__nav">
+							<span class="footer__nav_title">Навигация</span>
+							<ul class="footer__menu">
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_about.html">О компании</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_products.html">Продукция</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_certificate.html">Сертификаты</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_contact.html">Контакты</a>
+								</li>								
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_questions.html">Частые вопросы</a>
+								</li>
+							</ul>
+						</nav>
+						<nav class="footer-nav">
+							<span class="footer__nav_title">Личный кабинет</span>
+							<ul class="footer__menu">
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_authorization.html">Вход</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_registration.html">Регистрация</a>
+								</li>
+								<li class="footer__menu_item">
+									<a class="footer__menu_link" href="template_delivery.html">Доставка и оплата</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__contacts" itemscope itemtype="http://schema.org/Organization">
+							<div class="footer__contacts_item">
+								<meta itemprop="name" content="Site" />
+								<div class="footer__contacts_phone">
+									<div class="footer__contacts_phone-line">
+										<i class="footer__contacts_phone-icon icon icon-phone"></i>
+										<a class="footer__contacts_phone-link" href="tel:88005005261" itemprop="telephone">
+											<span itemprop="telephone">8 800 500 52 61</span>
+										</a>
+									</div>
+									<span class="footer__contacts_phone-text">Звонок по России бесплатый</span>
+								</div>
+							</div>
+							<div class="footer__contacts_item">
+								<div class="footer__contacts_address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									Россия, г. Санкт-Петербург, Шоссе Южное, д. 55, стр. 5
+								</div>
+							</div>
+							<div class="footer__contacts_item">
+								<div class="footer__contacts_email">
+									<span class="footer__contacts_email-text">E-mail:</span>
+									<a class="footer__contacts_email-link" href="emailto:maks-servis2012@mail.ru">
+										<span itemprop="email">maks-servis2012@mail.ru</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="footer__logo">
+							<a class="footer__logo_link" href="#">
+								<img class="footer__logo_img" src="img/logo.svg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						<a class="footer__copyright_link" href="#">Создание и продвижение сайтов — Siteuper</a>
+						<span class="footer__copyright_text" href="#">© 2022. Все права защищены.</span>
+						<a class="footer__copyright_link" href="#">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
