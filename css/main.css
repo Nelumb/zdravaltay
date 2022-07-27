@@ -4120,7 +4120,7 @@ makingAnOrder template
 
 /* Page content */
 .siteSize{
-	padding: 65px 0;
+	padding: 65px 0 0 0;
 }
   
   /* The sticky class is added to the header with JS when it reaches its scroll position */
